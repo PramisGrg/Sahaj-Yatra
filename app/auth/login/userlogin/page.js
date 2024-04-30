@@ -50,7 +50,7 @@ const page = () => {
                     Don not have an account!
                     <Link
                       className="text-primary hover:text-secondary font-bold ml-2"
-                      href="/auth/userregister"
+                      href="/auth/register/userregister"
                     >
                       Register
                     </Link>
