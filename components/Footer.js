@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="w-screen bg-primary mx-auto py-16 px-8 grid md:grid-cols-3 gap-8 text-gray-300">
+    <div className=" bg-primary mx-auto py-16 px-8 grid md:grid-cols-3 gap-8 text-gray-300">
       <div>
         <h1 className="w-full text-3xl font-bold text-white">Sahaj Yatra</h1>
         <p className="py-4 ">Lamachaur-16, Pokhara</p>
