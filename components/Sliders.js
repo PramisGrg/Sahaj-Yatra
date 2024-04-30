@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import CreditCard from "@/public/assets/CreditCard.svg";
-import DataAnalysis from "@/public/assets/Data Analysis.svg";
+import DataAnalysis from "@/public/assets/Data analysis.svg";
 import Image from "next/image";
 
 const Sliders = () => {
