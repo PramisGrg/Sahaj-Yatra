@@ -18,11 +18,11 @@ const Navbar = () => {
     },
     {
       title: "SuperAdmin Login",
-      link: "/superAdmin-login",
+      link: "/auth/login/superadminlogin",
     },
     {
       title: "BusOwner Login",
-      link: "/busOwner-login",
+      link: "/auth/login/adminlogin",
     },
   ];
 
