@@ -10,7 +10,7 @@ const About = () => {
     Aos.init();
   });
   return (
-    <div className="bg-primary px-8 py-20 grid md:grid-cols-2">
+    <div className="bg-primary px-8 py-20 grid md:grid-cols-2 overflow-hidden">
       <div data-aos="fade-right" data-aos-duration="1500" className=" ">
         <Image
           className="rounded-lg"
