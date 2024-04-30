@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Busvector from "@/public/assets/busVector.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -11,10 +11,13 @@ const Hero = () => {
         <p className="font-bold text-primary">
           and those who do not travel, read only a page
         </p>
-        <p className="text-3xl">Transportation Redifined</p>
-        <button className="bg-primary text-white mt-6 p-2 rounded-lg border-solid transition duration-300 hover:bg-secondary">
+        <p className="text-3xl mb-8">Transportation Redifined</p>
+        <Link
+          href="auth/login/userlogin"
+          className="bg-primary text-white p-4 text-xl rounded-lg border-solid transition duration-300 hover:text-secondary"
+        >
           Get started
-        </button>
+        </Link>
       </div>
       <div className="pt-20 h-screen">
         <Image src={Busvector} alt="bus vector image"></Image>
