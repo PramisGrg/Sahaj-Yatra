@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.6.8",
+    "cookies-next": "^4.1.1",
     "flowbite-react": "^0.9.0",
     "next": "14.2.3",
     "react": "^18",
