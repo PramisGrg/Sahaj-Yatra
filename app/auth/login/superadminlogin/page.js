@@ -14,7 +14,7 @@ const page = () => {
           <div className="items-center flex flex-col md:flex-row w-10/12 bg-white rounded-xl mx-auto shadow-lg">
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-10">
               <Image
-                className="w-[550px] h-[550px]"
+                className="md:w-[550px] md:h-[550px] w-[250px] h-[250px]"
                 alt="Login picture"
                 src={Login}
               />
@@ -39,7 +39,7 @@ const page = () => {
                     name="password"
                   ></input>
                 </div>
-                <div className="mt-6">
+                <div className="my-6">
                   <button
                     type="submit"
                     className="w-full bg-primary text-white hover:text-secondary font-bold p-2 mt-3 rounded items-center hover:scale-105 duration-300"

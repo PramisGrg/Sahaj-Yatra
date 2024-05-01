@@ -14,7 +14,7 @@ const Hero = () => {
         <p className="text-3xl mb-8">Transportation Redifined</p>
         <Link
           href="auth/login/userlogin"
-          className="bg-primary text-white p-4 text-xl rounded-lg border-solid transition duration-300 hover:text-secondary"
+          className="bg-primary text-white p-3 rounded-lg border-solid transition duration-300 hover:text-secondary"
         >
           Get started
         </Link>

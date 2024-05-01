@@ -14,7 +14,7 @@ const page = () => {
           <div className="items-center flex flex-col md:flex-row w-10/12 bg-white rounded-xl mx-auto shadow-lg">
             <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-10">
               <Image
-                className="w-[550px] h-[550px]"
+                className="md:w-[550px] md:h-[550px] w-[250px] h-[250px]"
                 alt="Login picture"
                 src={Login}
               />
