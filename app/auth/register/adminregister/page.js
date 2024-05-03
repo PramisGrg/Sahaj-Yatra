@@ -48,7 +48,7 @@ const RegisterPage = () => {
       <ToastContainer />
       <Navbar />
       <div className="h-screen flex justify-center items-center bg-slate-200">
-        <div className="w-4/5 h-3/4 rounded-lg md:w-2/5 bg-white">
+        <div className="w-4/5 rounded-lg md:w-[450px] bg-white">
           <form onSubmit={handleSubmit(onSubmit)} className=" h-full my-8">
             <div className="text-center ">
               <h1 className="text-3xl">Admin Register</h1>
@@ -56,10 +56,10 @@ const RegisterPage = () => {
                 Create your account, it is free and only takes a minute
               </p>
             </div>
-            <div className="gap-6 flex flex-col items-center">
+            <div className="space-y-6 p-6">
               <input
                 {...register("username")}
-                className="border rounded-sm border-primary w-2/3 p-2"
+                className="border rounded-sm border-primary p-2 w-full"
                 placeholder="Username"
               />
 
@@ -71,7 +71,7 @@ const RegisterPage = () => {
 
               <input
                 {...register("email")}
-                className="border rounded-sm border-primary p-2 w-2/3"
+                className="border rounded-sm border-primary p-2 w-full"
                 placeholder="Email"
               />
 
@@ -81,7 +81,7 @@ const RegisterPage = () => {
 
               <input
                 {...register("phoneNumber")}
-                className="border rounded-sm border-primary p-2 w-2/3"
+                className="border rounded-sm border-primary p-2 w-full"
                 placeholder="Phone Number"
               />
               {errors.phoneNumber && (
@@ -92,7 +92,7 @@ const RegisterPage = () => {
 
               <input
                 {...register("password")}
-                className="border rounded-sm border-primary p-2 w-2/3"
+                className="border rounded-sm border-primary p-2 w-full"
                 placeholder="Password"
               />
               {errors.password && (
@@ -102,7 +102,7 @@ const RegisterPage = () => {
               )}
               <button
                 type="submit"
-                className="bg-primary text-white w-2/3 p-2 hover:scale-105 transition-all duration-300 hover:text-secondary"
+                className="bg-primary text-white w-full p-2 hover:scale-105 transition-all duration-300 hover:text-secondary"
               >
                 Register now
               </button>
