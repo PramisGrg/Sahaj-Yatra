@@ -13,7 +13,6 @@ const registerSchema = z.object({
   username: z.string(),
   email: z.string().email(),
   phoneNumber: z.string().min(10),
-  citizenshipNumber: z.string(),
   password: z.string().min(5, "nust be at least 5 character long"),
 });
 
