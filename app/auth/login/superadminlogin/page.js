@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Login from "@/public/assets/Login.svg";
-import Link from "next/link";
 import Footer from "@/components/Footer";
 
 const page = () => {
