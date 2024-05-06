@@ -44,7 +44,7 @@ const RegisterPage = () => {
     <div>
       <ToastContainer />
 
-      <div className="h-screen flex justify-center items-center bg-slate-200">
+      <div className="h-screen flex justify-center items-center bg-slate-100">
         <div className="w-4/5 rounded-lg md:w-[450px] bg-white">
           <form onSubmit={handleSubmit(onSubmit)} className=" h-full my-8">
             <div className="text-center ">

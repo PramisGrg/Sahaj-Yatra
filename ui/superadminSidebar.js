@@ -6,22 +6,22 @@ import { FaUser, FaUserLock, FaUserCheck } from "react-icons/fa";
 const menuItems = [
   {
     title: "Dashboard",
-    path: "/dashboard/superadmin-dashboard",
+    path: "/superadmindashboard",
     icon: <MdDashboard />,
   },
   {
     title: "Users",
-    path: "/dashboard/superadmin-dashboard/Users",
+    path: "/superadmindashboard/users",
     icon: <FaUser />,
   },
   {
     title: "Unverified Users",
-    path: "/dashboard/superadmin-dashboard/UnverifiedUsers",
+    path: "/superadmindashboard/unverifiedusers",
     icon: <FaUserLock />,
   },
   {
     title: "Verified Users",
-    path: "/dashboard/superadmin-dashboard/VerifiedUsers",
+    path: "/superadmindashboard/verifiedusers",
     icon: <FaUserCheck />,
   },
   {
