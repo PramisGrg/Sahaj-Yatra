@@ -6,22 +6,22 @@ import { FaLocationDot, FaMoneyCheckDollar } from "react-icons/fa6";
 const menuItems = [
   {
     title: "Dashboard",
-    path: "/dashboard/user-dashboard",
+    path: "/userdashboard",
     icon: <MdDashboard />,
   },
   {
     title: "Location",
-    path: "/dashboard/user-dashboard/location ",
+    path: "/userdashboard/location",
     icon: <FaLocationDot />,
   },
   {
     title: "Payment",
-    path: "/dashboard/user-dashboard/payment",
+    path: "/userdashboard/payment",
     icon: <MdAttachMoney />,
   },
   {
     title: "Transaction",
-    path: "/dashboard/user-dashboard/Transaction",
+    path: "/userdashboard/transaction",
     icon: <FaMoneyCheckDollar />,
   },
   {
