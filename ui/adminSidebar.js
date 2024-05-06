@@ -8,28 +8,28 @@ import Link from "next/link";
 const menuItems = [
   {
     title: "Dashboard",
-    path: "/dashboard/admin-dashboard",
+    path: "/admindashboard",
     icon: <MdDashboard className=" w-5 h-6" />,
   },
 
   {
     title: "Bus",
-    path: "/dashboard/admin-dashboard/Bus",
+    path: "/admindashboard/bus",
     icon: <FaBus className=" w-5 h-6" />,
   },
   {
     title: "Bus Registration",
-    path: "/dashboard/admin-dashboard/BusRegistration",
+    path: "/admindashboard/busRegistration",
     icon: <GiBus className=" w-5 h-6" />,
   },
   {
     title: "Bus Location ",
-    path: "/dashboard/admin-dashboard/BusLocation",
+    path: "/admindashboard/busLocation",
     icon: <IoLocationOutline className=" w-5 h-6" />,
   },
   {
     title: "Log out",
-    path: "/dashboard/admin-dashboard/Logout",
+    path: "/admindashboard/ogout",
     icon: <MdLogout />,
   },
 ];
