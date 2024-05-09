@@ -1,6 +1,7 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import { MdDashboard, MdLogout } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
 import { FaUser, FaUserLock, FaUserCheck } from "react-icons/fa";
 
 const menuItems = [
@@ -24,16 +25,15 @@ const menuItems = [
     path: "/superadmindashboard/verifiedusers",
     icon: <FaUserCheck />,
   },
-  {
-    title: "Log out",
-    path: "/dashboard/superadmin-dashboard/Logout",
-    icon: <MdLogout />,
-  },
+  // {
+  //   title: "Log out",
+  //   path: "/dashboard/superadmin-dashboard/Logout",
+  //   icon: <MdLogout />,
 ];
 
 const SuperAdminSidebar = () => {
   return (
-    <div className="bg-primary w-1/5">
+    <div className="bg-primary" style={{ width: "250px" }}>
       <h1 className="font-bold text-white text-center text-2xl mt-4">
         सहज यात्रा
       </h1>
