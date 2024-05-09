@@ -13,7 +13,7 @@ import busIconUrl from "@/public/assets/bus-station.png";
 import coordinates from "@/data/coordinates/map.json";
 import { axiosAuthInstance } from "@/services/axios";
 
-const Map = () => {
+const BusLocation = () => {
   const [busData, setBusData] = useState([]);
   const [currentCoord, setCurrentCoord] = useState([]);
   const [coordinate, setCoordinate] = useState([]);
@@ -41,7 +41,7 @@ const Map = () => {
 
     const intervalId = setInterval(fetchData, 5000); // Fetch data every 5 seconds
     return () => clearInterval(intervalId); // Clean up interval on component unmount
-  }, [busData]);
+  });
 
   const handleDropdownChange = (event) => {
     const selectedIndex = parseInt(event.target.value); // Parse the value as an integer
@@ -117,4 +117,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default BusLocation;
