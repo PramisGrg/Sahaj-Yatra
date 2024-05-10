@@ -24,8 +24,7 @@ const UnverifiedUsers = () => {
       const params = new URLSearchParams(window.location.search);
       params.set("userID", userID);
       window.location.href =
-        "/dashboard/superadmin-dashboard/UnverifiedUsers/Popup?" +
-        params.toString();
+        "/superadmindashboard/unverifiedusers/verify?" + params.toString();
     }
   };
 
@@ -44,17 +43,19 @@ const UnverifiedUsers = () => {
           </thead>
           <tbody>
             {unverified.map((user) => (
-              <tr className="bg-slate-200" key={user._id}>
+              <tr className="" key={user._id}>
                 <td className="border px-6 py-3">{user.username}</td>
                 <td className="border px-6 py-3">{user.email}</td>
                 <td className="border px-6 py-3">{user.phoneNumber}</td>
                 <td className="border px-6 py-3">
-                  <button
-                    className=" bg-slate-800 text-white hover:bg-slate-500 font-bold py-2 px-4 mt-3 rounded items-center my-2 hover:scale-105 duration-300"
-                    onClick={() => HandlebtnForVerify(user._id)}
-                  >
-                    Verify
-                  </button>
+                  <div className="flex justify-center">
+                    <button
+                      className=" bg-primary text-white hover:bg-secondary font-bold py-2 px-4 mt-3 rounded items-center my-2 hover:scale-105 duration-300"
+                      onClick={() => HandlebtnForVerify(user._id)}
+                    >
+                      Verify
+                    </button>
+                  </div>
                 </td>
               </tr>
             ))}

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { MdDashboard, MdAttachMoney, MdLogout } from "react-icons/md";
 import { FaLocationDot, FaMoneyCheckDollar } from "react-icons/fa6";
+import Logout from "@/components/logout";
 
 const menuItems = [
   {
@@ -24,11 +25,11 @@ const menuItems = [
     path: "/userdashboard/transaction",
     icon: <FaMoneyCheckDollar />,
   },
-  {
-    title: "Log out",
-    path: "/dashboard/user-dashboard/Logout",
-    icon: <MdLogout />,
-  },
+  // {
+  //   title: "Log out",
+  //   path: "/dashboard/user-dashboard/Logout",
+  //   icon: <MdLogout />,
+  // },
 ];
 
 const UserSidebar = () => {
@@ -50,6 +51,9 @@ const UserSidebar = () => {
               </Link>
             </li>
           ))}
+          <div>
+            <Logout />
+          </div>
         </ul>
       </div>
     </div>

@@ -23,11 +23,11 @@ const VerifiedUsers = () => {
     <>
       <ToastContainer />
       <div className="container mx-auto p-6">
-        <h1 className="text-2xl font-bold mb-8 ">Verified Users : </h1>
-        <div className="rounded-lg overflow-x-auto">
-          <table className="table-auto border-collapse border w-full">
+        <h1 className="text-2xl mb-8 ">Verified Users : </h1>
+        <div className="rounded-lg shadow-lg overflow-x-auto">
+          <table className="table-auto w-full">
             <thead>
-              <tr className="py-4 text-white bg-slate-600">
+              <tr className="py-4 text-white bg-primary">
                 <th className="px-8 py-6">Name</th>
                 <th className="px-6 py-4">Email</th>
                 <th className="px-6 py-4">Phone Number</th>
@@ -37,23 +37,16 @@ const VerifiedUsers = () => {
             </thead>
             <tbody>
               {verified.map((user) => (
-                <tr
-                  className="bg-slate-200 border border-slate-900"
-                  key={user._id}
-                >
-                  <td className="border rounded-lg border-slate-900 px-10 py-8">
+                <tr className="border " key={user._id}>
+                  <td className="border rounded-lg px-10 py-8">
                     {user.username}
                   </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
-                    {user.email}
-                  </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
+                  <td className="border rounded-lg px-6 py-3">{user.email}</td>
+                  <td className="border rounded-lg px-6 py-3">
                     {user.phoneNumber}
                   </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
-                    {user.amount}
-                  </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
+                  <td className="border rounded-lg px-6 py-3">{user.amount}</td>
+                  <td className="border rounded-lg px-6 py-3">
                     {user.rfidNumber}
                   </td>
                 </tr>

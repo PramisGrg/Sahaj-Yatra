@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { MdDashboard } from "react-icons/md";
 import { FaUser, FaUserLock, FaUserCheck } from "react-icons/fa";
+import axiosInstance from "@/services/axios";
+import Logout from "@/components/logout";
 
 const menuItems = [
   {
@@ -29,6 +31,7 @@ const menuItems = [
   //   title: "Log out",
   //   path: "/dashboard/superadmin-dashboard/Logout",
   //   icon: <MdLogout />,
+  // },
 ];
 
 const SuperAdminSidebar = () => {
@@ -50,6 +53,9 @@ const SuperAdminSidebar = () => {
               </Link>
             </li>
           ))}
+          <div>
+            <Logout />
+          </div>
         </ul>
       </div>
     </div>

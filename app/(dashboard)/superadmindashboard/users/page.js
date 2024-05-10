@@ -32,11 +32,11 @@ const Users = () => {
     <>
       <ToastContainer />
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-8 ">Users : </h1>
-        <div className="rounded-lg overflow-x-auto">
-          <table className="table-auto border-collapse border w-full">
+        <h1 className="text-2xl mb-8 ">Users : </h1>
+        <div className="rounded-lg shadow-lg overflow-x-auto">
+          <table className="table-auto w-full">
             <thead>
-              <tr className="py-4 text-white border border-slate-900 bg-primary">
+              <tr className="py-4 text-white bg-primary">
                 <th className="px-8 py-6">Name</th>
                 <th className="px-6 py-4">Email</th>
                 <th className="px-6 py-4">Phone Number</th>
@@ -48,23 +48,19 @@ const Users = () => {
             </thead>
             <tbody>
               {user.map((user) => (
-                <tr className="border border-slate-900" key={user._id}>
-                  <td className="border rounded-lg border-slate-900 px-10 py-8">
+                <tr className="" key={user._id}>
+                  <td className="border rounded-lg px-10 py-8">
                     {user.username}
                   </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
-                    {user.email}
-                  </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
+                  <td className="border rounded-lg px-6 py-3">{user.email}</td>
+                  <td className="border rounded-lg px-6 py-3">
                     {user.phoneNumber}
                   </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
+                  <td className="border rounded-lg px-6 py-3">
                     {user.citizenshipNumber}
                   </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
-                    {user._id}
-                  </td>
-                  <td className="border rounded-lg border-slate-900 px-6 py-3">
+                  <td className="border rounded-lg px-6 py-3">{user._id}</td>
+                  <td className="border rounded-lg px-6 py-3">
                     <button
                       className=" bg-primary text-white hover:bg-secondary font-bold py-2 px-4 mt-3 rounded items-center my-2 hover:scale-105 duration-300"
                       onClick={() => HandlebtnForInfo(user._id)}

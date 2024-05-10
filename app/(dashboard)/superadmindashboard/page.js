@@ -1,13 +1,7 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import { FiUserCheck } from "react-icons/fi";
-import Logout from "@/components/logout";
 
 const SuperAdmin = () => {
-  const [logout, setlogout] = useState(false);
-  const handleClick = () => {
-    setlogout(!logout);
-  };
   return (
     <div>
       <div className="flex flex-col">
@@ -18,13 +12,6 @@ const SuperAdmin = () => {
           <div className="flex gap-4">
             <span className="mt-2">Pramis Gurung</span>
             <FiUserCheck className="font-bold mt-2 text-xl" />
-            <button
-              className="bg-primary text-white p-1 rounded-lg hover:text-secondary hover:scale-105 transition-all duration-300"
-              onClick={handleClick}
-            >
-              LogOut
-              <Logout value={logout} />
-            </button>
           </div>
         </div>
       </div>
