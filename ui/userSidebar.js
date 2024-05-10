@@ -34,7 +34,7 @@ const menuItems = [
 
 const UserSidebar = () => {
   return (
-    <div className="bg-primary w-1/5">
+    <div className="bg-primary " style={{ width: "250px" }}>
       <h1 className="font-bold text-white text-center text-2xl mt-4">
         सहज यात्रा
       </h1>
