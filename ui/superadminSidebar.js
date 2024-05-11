@@ -9,22 +9,22 @@ import Logout from "@/components/logout";
 const menuItems = [
   {
     title: "Dashboard",
-    path: "dashboard/superadmindashboard",
+    path: "/dashboard/superadmindashboard",
     icon: <MdDashboard />,
   },
   {
     title: "Users",
-    path: "dashboard/superadmindashboard/users",
+    path: "/dashboard/superadmindashboard/users",
     icon: <FaUser />,
   },
   {
     title: "Unverified Users",
-    path: "dashboard/superadmindashboard/unverifiedusers",
+    path: "/dashboard/superadmindashboard/unverifiedusers",
     icon: <FaUserLock />,
   },
   {
     title: "Verified Users",
-    path: "dashboard/superadmindashboard/verifiedusers",
+    path: "/dashboard/superadmindashboard/verifiedusers",
     icon: <FaUserCheck />,
   },
   // {

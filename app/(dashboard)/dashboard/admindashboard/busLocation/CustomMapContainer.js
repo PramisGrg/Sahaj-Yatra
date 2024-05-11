@@ -41,7 +41,7 @@ const BusLocation = () => {
 
     const intervalId = setInterval(fetchData, 5000); // Fetch data every 5 seconds
     return () => clearInterval(intervalId); // Clean up interval on component unmount
-  });
+  }, [busData]);
 
   const handleDropdownChange = (event) => {
     const selectedIndex = parseInt(event.target.value); // Parse the value as an integer

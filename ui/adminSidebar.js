@@ -9,23 +9,23 @@ import Logout from "@/components/logout";
 const menuItems = [
   {
     title: "Dashboard",
-    path: "/admindashboard",
+    path: "/dashboard/admindashboard",
     icon: <MdDashboard className=" w-5 h-6" />,
   },
 
   {
     title: "Bus",
-    path: "dashboard/admindashboard/bus",
+    path: "/dashboard/admindashboard/bus",
     icon: <FaBus className=" w-5 h-6" />,
   },
   {
     title: "Bus Registration",
-    path: "dashboard/admindashboard/busRegistration",
+    path: "/dashboard/admindashboard/busRegistration",
     icon: <GiBus className=" w-5 h-6" />,
   },
   {
     title: "Bus Location ",
-    path: "dashboard/admindashboard/busLocation",
+    path: "/dashboard/admindashboard/busLocation",
     icon: <IoLocationOutline className=" w-5 h-6" />,
   },
   // {
