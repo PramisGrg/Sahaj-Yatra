@@ -7,22 +7,22 @@ import Logout from "@/components/logout";
 const menuItems = [
   {
     title: "Dashboard",
-    path: "/userdashboard",
+    path: "dashboard/userdashboard",
     icon: <MdDashboard />,
   },
   {
     title: "Location",
-    path: "/userdashboard/location",
+    path: "dashboard/userdashboard/location",
     icon: <FaLocationDot />,
   },
   {
     title: "Payment",
-    path: "/userdashboard/payment",
+    path: "dashboard/userdashboard/payment",
     icon: <MdAttachMoney />,
   },
   {
     title: "Transaction",
-    path: "/userdashboard/transaction",
+    path: "dashboard/userdashboard/transaction",
     icon: <FaMoneyCheckDollar />,
   },
   // {

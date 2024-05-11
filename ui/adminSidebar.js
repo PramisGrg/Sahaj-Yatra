@@ -4,6 +4,7 @@ import { FaBus } from "react-icons/fa";
 import { GiBus } from "react-icons/gi";
 import { IoLocationOutline } from "react-icons/io5";
 import Link from "next/link";
+import Logout from "@/components/logout";
 
 const menuItems = [
   {
@@ -14,24 +15,24 @@ const menuItems = [
 
   {
     title: "Bus",
-    path: "/admindashboard/bus",
+    path: "dashboard/admindashboard/bus",
     icon: <FaBus className=" w-5 h-6" />,
   },
   {
     title: "Bus Registration",
-    path: "/admindashboard/busRegistration",
+    path: "dashboard/admindashboard/busRegistration",
     icon: <GiBus className=" w-5 h-6" />,
   },
   {
     title: "Bus Location ",
-    path: "/admindashboard/busLocation",
+    path: "dashboard/admindashboard/busLocation",
     icon: <IoLocationOutline className=" w-5 h-6" />,
   },
-  {
-    title: "Log out",
-    path: "/admindashboard/ogout",
-    icon: <MdLogout />,
-  },
+  // {
+  //   title: "Log out",
+  //   path: "/admindashboard/ogout",
+  //   icon: <MdLogout />,
+  // },
 ];
 
 const AdminSidebar = () => {
@@ -54,6 +55,9 @@ const AdminSidebar = () => {
               </Link>
             </li>
           ))}
+          <div>
+            <Logout />
+          </div>
         </ul>
       </div>
     </div>

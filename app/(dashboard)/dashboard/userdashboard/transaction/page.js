@@ -11,7 +11,6 @@ const Page = () => {
       try {
         const response = await axiosAuthInstance.get("/transaction/history");
         console.log(response);
-        toast.success(response?.data?.message);
         setTransaction(response?.data?.data);
       } catch (error) {
         toast.error(error);
