@@ -22,12 +22,12 @@ const Page = () => {
   return (
     <>
       <ToastContainer />
-      <div className="container mx-auto p-6">
-        <h1 className="text-2xl font-bold mb-8 ">Transaction History : </h1>
+      <div className="container mx-auto p-4">
+        <h1 className="text-2xl my-8 ">Transaction History : </h1>
         <div className="rounded-lg overflow-x-auto">
           <table className="table-auto border-collapse border w-full">
             <thead>
-              <tr className="py-4 text-white bg-[#17324b]">
+              <tr className="py-4 text-white bg-primary">
                 <th className="px-6 py-4">Transaction Date</th>
                 <th className="px-6 py-4">Transaction Type</th>
                 <th className="px-8 py-4">Amount</th>

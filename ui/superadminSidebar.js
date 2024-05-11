@@ -27,11 +27,6 @@ const menuItems = [
     path: "/dashboard/superadmindashboard/verifiedusers",
     icon: <FaUserCheck />,
   },
-  // {
-  //   title: "Log out",
-  //   path: "/dashboard/superadmin-dashboard/Logout",
-  //   icon: <MdLogout />,
-  // },
 ];
 
 const SuperAdminSidebar = () => {

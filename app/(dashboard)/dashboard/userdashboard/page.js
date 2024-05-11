@@ -1,22 +1,51 @@
+"use client";
 import React from "react";
+import { useState, useEffect } from "react";
 import { FiUserCheck } from "react-icons/fi";
+import { axiosAuthInstance } from "@/services/axios";
+import PieChartPage from "@/components/PieChart";
 
 const User = () => {
+  const [state, setState] = useState(" ");
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const response = await axiosAuthInstance.get("/user/info");
+        console.log(response);
+        setState(response?.data?.data);
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, []);
+
   return (
     <div>
+      {/* Topbar */}
       <div className="flex flex-col">
         <div className="flex justify-between p-4">
           <div>
             <h1 className="font-bold text-xl mt-2">User Dashbaord </h1>
           </div>
           <div className="flex gap-4">
-            <span className="mt-2">Pramis Gurung</span>
+            <span className="mt-2">{state.username}</span>
             <FiUserCheck className="font-bold mt-2 text-xl" />
           </div>
         </div>
       </div>
-      <div className="p-4">
-        <h1>PAge</h1>
+      {/* main Dashboard */}
+      <div className="grid grid-cols-2 gap-4 p-4">
+        <div className="col-span-1 bg-slate-100 rounded-lg p-4 space-y-4">
+          <div className="text-xl">{state.username}</div>
+          <div className="shadow-lg rounded-lg flex flex-col p-4 bg-white justify-between">
+            <div className="text-gray-400 text-xl">Amount :</div>
+            <div className="text-5xl my-4">Rs {state.amount}</div>
+          </div>
+        </div>
+        <div className="col-span-1 bg-slate-100 p-4 rounded-lg space-y-4">
+          <PieChartPage />
+        </div>
       </div>
     </div>
   );

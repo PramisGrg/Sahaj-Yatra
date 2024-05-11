@@ -54,7 +54,7 @@ const Map = () => {
 
   return (
     <div className="flex flex-col  items-center justify-center">
-      <h1 className="m-8 text-2xl font-bold">Bus Location</h1>
+      <h1 className="m-8 text-2xl">Bus Location</h1>
       <MapContainer
         style={{
           height: "70vh",

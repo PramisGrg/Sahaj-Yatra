@@ -43,7 +43,7 @@ const LoginPage = () => {
         toast.success(response?.data?.message);
         setCookie("token", response?.data?.token);
         setCookie("role", response?.data?.role);
-        router.push("dashboard/admindashboard");
+        router.push("/dashboard/admindashboard");
       }
     } catch (error) {
       console.log(error);
