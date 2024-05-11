@@ -90,43 +90,44 @@ const BarChartPage = () => {
 
   return (
     <>
-      <div className="topBar">
-        <div className="grid lg:grid-cols-5 gap-4 p-4">
-          <div className="lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg">
-            <div className="flex flex-col w-full pb-4">
-              <p className="text-2xl font-bold">NPR, {daily_Revenue}</p>
+      <div>
+        <div className=" grid grid-cols-2 gap-4 p-4">
+          <div class="col-span-1 bg-gray-100 p-4 rounded-lg">
+            <div className="flex flex-col w-full">
+              <p className="text-2xl">NPR, {daily_Revenue}</p>
               <p className="text-gray-600">Daily Revenue</p>
             </div>
           </div>
-          <div className="lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg">
-            <div className="flex flex-col w-full pb-4">
-              <p className="text-2xl font-bold">NPR,{yearly_Revenue}</p>
+          <div class="col-span-1 bg-gray-100 p-4 rounded-lg">
+            <div className="flex flex-col w-full">
+              <p className="text-2xl">NPR,{yearly_Revenue}</p>
               <p className="text-gray-600">YTD Revenue</p>
             </div>
           </div>
-          <div className="lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg">
-            <div className="flex flex-col w-full pb-4">
-              <p className="text-2xl font-bold">NPR, {monthly_Revenue}</p>
+          <div class="col-span-1 bg-gray-100 p-4 rounded-lg">
+            {" "}
+            <div className="flex flex-col w-full">
+              <p className="text-2xl">NPR, {monthly_Revenue}</p>
               <p className="text-gray-600">Monthly Revenue</p>
             </div>
           </div>
-          <div className="lg:col-span-2 col-span-1 bg-white flex justify-between w-full border p-4 rounded-lg">
-            <div className="flex flex-col w-full pb-4">
-              <p className="text-2xl font-bold">{bus_no}</p>
+          <div class="col-span-1 bg-gray-100 p-4 rounded-lg">
+            <div className="flex flex-col w-full">
+              <p className="text-2xl">{bus_no}</p>
               <p className="text-gray-600">Total Bus</p>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto border rounded-lg bg-white ml-4"
-        style={{ maxWidth: "70%", marginLeft: "5%", marginRight: "auto" }}
+        className="w-full col-span-2 relative h-[60vh] m-auto border rounded-lg bg-white "
+        style={{ maxWidth: "90%", marginLeft: "5%", marginRight: "auto" }}
       >
-        <div className="absolute top-4 right-4 z-10">
+        <div className="absolute top-2 right-2 z-10">
           <select
             value={selectedOption}
             onChange={(e) => handleOptionChange(e.target.value)}
-            className="px-3 py-1 bg-white border rounded-md shadow"
+            className="bg-slate-100 border rounded-md shadow"
           >
             <option value="daily">Daily</option>
             <option value="monthly">Monthly</option>

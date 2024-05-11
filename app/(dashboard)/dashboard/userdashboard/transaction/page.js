@@ -36,8 +36,8 @@ const Page = () => {
             </thead>
             <tbody>
               {transaction.map((user) => (
-                <tr className="bg-slate-200 border " key={user._id}>
-                  <td className="border rounded-lg  px-10 py-8">
+                <tr className="bg-slate-200  " key={user._id}>
+                  <td className=" rounded-lg  px-10 py-8">
                     {user.transactionDate}
                   </td>
                   <td

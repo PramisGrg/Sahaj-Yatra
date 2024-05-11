@@ -4,6 +4,7 @@ import React from "react";
 import { MdLogout } from "react-icons/md";
 import { axiosAuthInstance } from "@/services/axios";
 import Cookies from "js-cookie";
+import { toast } from "react-toastify";
 
 const Logout = () => {
   const router = useRouter();
@@ -14,6 +15,7 @@ const Logout = () => {
         Cookies.remove("token");
         Cookies.remove("role");
         router.push("/");
+        toast.success(response?.data?.message);
       } else {
         console.log("Failed to logout: " + response.data.message);
       }
