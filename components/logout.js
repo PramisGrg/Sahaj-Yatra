@@ -14,8 +14,9 @@ const Logout = () => {
       if (response.status === 200) {
         Cookies.remove("token");
         Cookies.remove("role");
-        router.push("/");
         toast.success(response?.data?.message);
+        console.log(response);
+        router.push("/");
       } else {
         console.log("Failed to logout: " + response.data.message);
       }
@@ -25,12 +26,12 @@ const Logout = () => {
     console.log("Button clicked");
   };
   return (
-    <buttton onClick={handleLogout}>
+    <button onClick={handleLogout}>
       <div className="flex p-3 gap-2 cursor-pointer text-white hover:text-secondary transition-all duration-300 hover:scale-105">
         <MdLogout className="mt-1" />
         Logout
       </div>
-    </buttton>
+    </button>
   );
 };
 

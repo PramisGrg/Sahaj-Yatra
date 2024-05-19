@@ -44,6 +44,7 @@ const LoginPage = () => {
         setCookie("role", response?.data?.role);
         router.push("/dashboard/superadmindashboard");
       }
+      console.log(response);
     } catch (error) {
       console.log(error);
       toast.error(error?.response?.data?.error);

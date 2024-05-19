@@ -24,7 +24,8 @@ const UnverifiedUsers = () => {
       const params = new URLSearchParams(window.location.search);
       params.set("userID", userID);
       window.location.href =
-        "/superadmindashboard/unverifiedusers/verify?" + params.toString();
+        "/dashboard/superadmindashboard/unverifiedusers/verify?" +
+        params.toString();
     }
   };
 

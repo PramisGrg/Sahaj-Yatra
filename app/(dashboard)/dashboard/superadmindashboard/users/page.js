@@ -25,7 +25,7 @@ const Users = () => {
     const params = new URLSearchParams(window.location.search);
     params.set("userID", userID);
     window.location.href =
-      "/superadmindashboard/users/info?" + params.toString();
+      "/dashboard/superadmindashboard/users/info?" + params.toString();
   };
 
   return (
