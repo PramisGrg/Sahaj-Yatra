@@ -35,7 +35,7 @@ const LoginPage = () => {
     try {
       console.log(data);
       const response = await axios.post(
-        "http://localhost:8000/api/v1/auth/login/",
+        "https://sahajyatraapi.onrender.com/api/v1/auth/login/",
         data
       );
       console.log(response);
