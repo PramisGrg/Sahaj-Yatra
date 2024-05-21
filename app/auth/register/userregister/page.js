@@ -31,7 +31,7 @@ const RegisterPage = () => {
     try {
       console.log(data);
       const response = await axios.post(
-        "http://localhost:8000/api/v1/auth/register/",
+        "https://sahajyatraapi.onrender.com/api/v1/auth/register/",
         data
       );
       if (response?.status == 201) {
