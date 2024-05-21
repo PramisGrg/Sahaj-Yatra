@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { GlobalContextProvider } from "./page";
+import { GlobalContextProvider } from "./dashboard/page";
 
 const layout = ({ children }) => {
   return (
