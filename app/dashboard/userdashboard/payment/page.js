@@ -4,7 +4,7 @@ import KhaltiCheckout from "khalti-checkout-web";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { axiosAuthInstance } from "@/services/axios";
-import { useGlobalContext } from "../../page";
+import { useGlobalContext } from "@/context/context";
 
 const Payment = () => {
   const [ampunt, setAmount] = useState(0);
