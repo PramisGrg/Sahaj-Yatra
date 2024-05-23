@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import axios from "axios";
+import axiosInstance from "@/services/axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -30,10 +30,7 @@ const RegisterPage = () => {
   const onSubmit = async (data) => {
     try {
       console.log(data);
-      const response = await axios.post(
-        "https://sahajyatraapi.onrender.com/api/v1/auth/register/",
-        data
-      );
+      const response = await axiosInstance.post("/auth/register/", data);
       if (response?.status == 201) {
         toast.success(response?.data?.message);
       }

@@ -12,6 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useForm } from "react-hook-form";
 import { setCookie } from "cookies-next";
 import { useRouter } from "next/navigation";
+import axiosInstance from "@/services/axios";
 
 const loginSchema = z.object({
   email: z.string(),
@@ -33,10 +34,7 @@ const LoginPage = () => {
   const onSubmit = async (data) => {
     try {
       console.log(data);
-      const response = await axios.post(
-        "https://sahajyatraapi.onrender.com/api/v1/auth/login/superadmin",
-        data
-      );
+      const response = await axiosInstance.post("/auth/login/superadmin", data);
       console.log(response);
       if (response?.status == 200) {
         toast.success(response?.data?.message);

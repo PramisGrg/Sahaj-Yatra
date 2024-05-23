@@ -8,6 +8,7 @@ import { z } from "zod";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axiosInstance from "@/services/axios";
 
 const registerSchema = z.object({
   username: z.string(),
@@ -29,10 +30,7 @@ const RegisterPage = () => {
   const onSubmit = async (data) => {
     try {
       console.log(data);
-      const response = await axios.post(
-        "https://sahajyatraapi.onrender.com/api/v1/auth/register/admin/",
-        data
-      );
+      const response = await axiosInstance.post("/auth/register/admin/", data);
       if (response?.status == 201) {
         toast.success(response?.data?.message);
       }
