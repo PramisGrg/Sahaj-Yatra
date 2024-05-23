@@ -20,7 +20,7 @@ const Bus = () => {
   return (
     <div className=" mt-10 container mx-auto p-6">
       <h1 className="text-2xl font-bold mb-4">List of Buses</h1>
-      <div className="mt-5 overflow-x-auto">
+      <div className="rounded-lg shadow-lg overflow-x-auto">
         <table className="table-auto border-collapse border w-full">
           <thead>
             <tr className="py-4 border border-slate-700 text-white bg-primary">
@@ -33,16 +33,14 @@ const Bus = () => {
           <tbody>
             {bus.map((user) => (
               <tr className=" " key={user.id}>
-                <td className="border border-slate-700 px-6 py-3">
+                <td className="border rounded-lg px-10 py-8">
                   {user.busNumber}
                 </td>
-                <td className="border  border-slate-700 px-6 py-3">
+                <td className="border  roounded-lg px-6 py-3">
                   {user.busType}
                 </td>
-                <td className="border  border-slate-700 px-6 py-3">
-                  {user.busRoute}
-                </td>
-                <td className="border  border-slate-700 px-6 py-3">
+                <td className="border rounded-lg px-6 py-3">{user.busRoute}</td>
+                <td className="border rouonded-lg px-6 py-3">
                   {user.busSeats}
                 </td>
               </tr>

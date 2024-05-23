@@ -6,7 +6,6 @@ import Login from "@/public/assets/Login.svg";
 import Footer from "@/components/Footer";
 import { z } from "zod";
 import { ToastContainer, toast } from "react-toastify";
-import axios from "axios";
 import { zodResolver } from "@hookform/resolvers/zod";
 import "react-toastify/dist/ReactToastify.css";
 import { useForm } from "react-hook-form";
