@@ -42,7 +42,7 @@ const Users = () => {
                 <th className="px-6 py-4">Phone Number</th>
                 <th className="px-6 py-4">Citizenship Number</th>
 
-                <th className="px-6 py-4">ID</th>
+                {/* <th className="px-6 py-4">ID</th> */}
                 <th className="px-6 py-4">Info</th>
               </tr>
             </thead>
@@ -59,7 +59,7 @@ const Users = () => {
                   <td className="border rounded-lg px-6 py-3">
                     {user.citizenshipNumber}
                   </td>
-                  <td className="border rounded-lg px-6 py-3">{user._id}</td>
+                  {/* <td className="border rounded-lg px-6 py-3">{user._id}</td> */}
                   <td className="border rounded-lg px-6 py-3">
                     <button
                       className=" bg-primary text-white hover:bg-secondary font-bold py-2 px-4 mt-3 rounded items-center my-2 hover:scale-105 duration-300"
