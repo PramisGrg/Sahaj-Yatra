@@ -7,6 +7,7 @@ import PieChartPage from "@/components/PieChart";
 
 const User = () => {
   const [state, setState] = useState(" ");
+  console.log({ state });
 
   useEffect(() => {
     (async () => {
@@ -18,7 +19,8 @@ const User = () => {
         console.log(error);
       }
     })();
-  }, []);
+    console.log("Rendered.");
+  }, [state]);
 
   return (
     <div>
