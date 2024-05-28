@@ -83,6 +83,7 @@ const LoginPage = () => {
                   <input
                     {...register("password")}
                     placeholder="Password"
+                    type="password"
                     className="border rounded-sm border-primary p-2 w-full"
                   />{" "}
                   {errors.password && (

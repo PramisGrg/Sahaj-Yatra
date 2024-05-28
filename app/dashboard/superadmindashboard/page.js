@@ -11,6 +11,7 @@ import BarChart from "@/components/BarChart2";
 const SuperAdmin = () => {
   const [user, setUser] = useState([]);
   const [count, setCount] = useState();
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -25,7 +26,8 @@ const SuperAdmin = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [count]);
+
   return (
     <div>
       <div className="flex flex-col">
